@@ -24,6 +24,7 @@ class Day12 {
     }
 
     private fun part2(lines: List<String>) {
+        // same idea but reverse the heights, and start from "E", finish on "a" or "S"
         var start = Coord(0,0)
         val endSet = mutableSetOf<Coord>()
         val matrix = Array(lines.size) {  x ->
